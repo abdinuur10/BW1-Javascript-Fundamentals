@@ -21,7 +21,10 @@ const students = [
   The school wants all student's gender converted to full gender word, M = Male, F = Female. Print the name of the student and their gender like "Lev : Male".
   
   */
-
+  let stuentinformation = [];
+// console.log(stuentinformation); 
+const mystudents = students.map((item) => item.student_name.gender())
+console.log(students)
 
   
   /* Request 2:
@@ -29,7 +32,14 @@ const students = [
   The school wants to know the students that are one year away from graduating, the graduating year is 18. Print the name of the student and their age.
   
   */
-
+let mygraduation = '18';
+const student_name=[]
+runners.filter((item) => {
+  if (item.student_name === "age") {
+    student_name.push(item.shirt_size.age)
+  }
+})
+console.log(student_name)
 
 
 
@@ -38,6 +48,13 @@ const students = [
 The school wants to know the percentage of females and males. Print the percentage of females like "Females: 40%" and "Males: 60%", you can use the total items to calculate your percentage.
   
   */
+const studnetsPercentage = students.reduce(function(acculator,currentValue) {
+  console.log(`I am the accumulator ${accumulator}`)
+  console.log(`I am the currentValue ${currentValue}`)
+  return accumulator + currentValue.gender;
+},0)
+
+console.log(studnetsPercentage)
 
 
   
