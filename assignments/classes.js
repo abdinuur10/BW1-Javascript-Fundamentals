@@ -15,19 +15,29 @@
 */
 
 class Airplane {
-
+  constructor(name) {
+    this.name = name;
+    this.isFlying = false;
   }
+  takeOff() {
+    this.isFlying = true;
+  }
+  land() {
+    this.isFlying = false;
+  }
+}
+
   
 
 // UNCOMMENT THE OBJECT AND CONSOLE LOG BELOW TO TEST
 
-//   let boeing777 = new Airplane({
-//       name: "Boeing 777"
-//   })
+  let boeing777 = new Airplane({
+      name: "Boeing 777"
+  })
   
 
-//   console.log(boeing777.takeOff()) // Boeing 777 has taken off
-//   console.log(boeing777.land()) // Boeing 777 has just landed
+  console.log(boeing777.takeOff()) // Boeing 777 has taken off
+  console.log(boeing777.land()) // Boeing 777 has just landed
 
 
 
