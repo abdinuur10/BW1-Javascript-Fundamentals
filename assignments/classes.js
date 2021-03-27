@@ -14,6 +14,7 @@
             - "{name} has just landed"
 */
 
+
 class Airplane {
   constructor(name) {
     this.name = name;
